@@ -34,7 +34,10 @@ form.addEventListener('submit', function(e){
      if(senha.length < 4 ) return alert("SENHA MUITO CURTA!");
      if(confirmarSenha !== senha) return alert("SENHA ERRADA, NÃO É A MESMA SENHA!");
      if(cidade.length < 3 ) return alert("Nome da cidade muito pequeno");
-     
+     if(estado.length < 3 ) return alert("Estado inexistente!");
+     if(CEP.length < 8 ) return alert("CEP inválido!");
+     if(curso.length < 6) return alert("Curso Inválido");
+     if(matricula.length < 4) return alert("Matricula Inválida!");
     
 
      
