@@ -32,7 +32,10 @@ form.addEventListener('submit', function(e){
      if(cpfCadastrados.includes(cpf)) return alert("CPF já cadastrado");
      if(endereco.length < 20) return alert ("Endereço Inválido");
      if(senha.length < 4 ) return alert("SENHA MUITO CURTA!");
-     if(confirmarSenha != senha) return alert("SENHA ERRADA, NÃO É A MESMA SENHA!");
+     if(confirmarSenha !== senha) return alert("SENHA ERRADA, NÃO É A MESMA SENHA!");
+     if(cidade.length < 3 ) return alert("Nome da cidade muito pequeno");
+     
+    
 
      
        
